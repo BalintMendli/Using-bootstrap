@@ -73,3 +73,24 @@ ul.page-nav {
   top: 18px;
   right: 82px;
 }
+
+.category {
+  bottom: 0;
+  left: 0;
+  color: #f72210;
+}
+
+.summary {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+p {
+  line-height: 20px;
+}
+
+.icon-n {
+  width: 36px;
+  height: 28px;
+  background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/logo-n1.svg)
+    center/contain no-repeat #f72210;
+}
