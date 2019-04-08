@@ -94,3 +94,15 @@ p {
   background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/logo-n1.svg)
     center/contain no-repeat #f72210;
 }
+
+@media screen and (min-width: 768px) {
+  .magazine-img {
+    height: 267px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+.mag-cat {
+  background-color: #f72210;
+}
