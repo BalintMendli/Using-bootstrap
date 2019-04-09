@@ -8,6 +8,14 @@ a {
   text-decoration: none;
 }
 
+.text-red {
+  color: #f72210;
+}
+
+.bg-red {
+  background-color: #f72210;
+}
+
 .navbar {
   position: relative;
   background-color: #f72210;
@@ -15,7 +23,7 @@ a {
   padding: 20px 10px 15px;
 }
 
-.brand {
+nav .brand {
   transform: translate(-50%, 0);
   position: absolute;
   z-index: 3;
@@ -24,7 +32,7 @@ a {
   padding: 10px 15px;
 }
 
-svg {
+nav .brand svg {
   fill: #fff;
   width: 396px;
   height: 60px;
@@ -82,14 +90,11 @@ ul.page-nav {
 
 .summary {
   font-family: Arial, Helvetica, sans-serif;
-}
-
-p {
-  line-height: 20px;
+  line-height: 1.25rem;
 }
 
 .icon-n {
-  width: 36px;
+  width: 29px;
   height: 28px;
   background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/logo-n1.svg)
     center/contain no-repeat #f72210;
@@ -105,4 +110,54 @@ p {
 
 .mag-cat {
   background-color: #f72210;
+}
+
+.feat-ss:after {
+  border-bottom: 3px solid red;
+  border-right: 3px solid red;
+  display: block;
+  content: '';
+  width: 29px;
+  height: 28px;
+  position: absolute;
+  bottom: -4px;
+  right: -4px;
+}
+
+.count-link {
+  width: 70px;
+  height: 52px;
+  bottom: 0;
+  left: 0;
+  font-size: 20px;
+  line-height: 58px;
+  text-indent: 5px;
+  text-align: center;
+  background: url(https://s.newsweek.com/sites/www.newsweek.com/themes/newsweek/images/icon-slideshows-nw.png)
+    0 0 / contain no-repeat;
+  color: #e9212e;
+}
+
+@font-face {
+  font-family: 'Genericons';
+  font-display: auto;
+  src: local('Genericons'),
+    url('https://s.newsweek.com/sites/all/themes/lemon/fonts/Genericons.eot');
+  src: url('https://s.newsweek.com/sites/all/themes/lemon/fonts/Genericons.eot?#iefix')
+      format('embedded-opentype'),
+    url('https://s.newsweek.com/sites/all/themes/lemon/fonts/Genericons.woff')
+      format('woff'),
+    url('https://s.newsweek.com/sites/all/themes/lemon/fonts/Genericons.ttf')
+      format('truetype'),
+    url('https://s.newsweek.com/sites/all/themes/lemon/fonts/Genericons.svg#Genericons')
+      format('svg');
+  font-weight: 400;
+  font-style: normal;
+}
+
+footer .brand svg {
+  display: block;
+  width: 236px;
+  height: 36px;
+  fill: #f72210;
 }
